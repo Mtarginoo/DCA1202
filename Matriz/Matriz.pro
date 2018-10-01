@@ -5,10 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    point.cpp \
-    poligono.cpp
+    matriz.cpp
 
 HEADERS += \
-    point.h \
-    point.h \
-    poligono.h
+    matriz.h

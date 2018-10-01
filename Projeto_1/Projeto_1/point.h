@@ -14,9 +14,10 @@ public:
     float getY(void);
     Point add(Point p1);
     Point sub(Point p1);
-    float norma(Point p1);
+    float norma();
     void translada(float a, float b);
-    void imprime(Point p1);
+    void imprime();
 };
 
 #endif // POINT_H
+

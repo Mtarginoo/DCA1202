@@ -24,7 +24,7 @@ Point Point::add(Point p1){
     Point soma;
 
     soma.x=x+p1.x;
-    soma.y=+p1.y;
+    soma.y=y+p1.y;
     return soma;
 }
 
@@ -36,25 +36,24 @@ Point Point::sub(Point p1){
     return subtracao;
 }
 
-float Point::norma(Point p1){
+float Point::norma(){
     float a, b, n;
-    a = p1.x;
-    b = p1.y;
-
+    a = x;
+    b = y;
     n = sqrt((a*a)+(b*b));
     return n;
 
 }
 
 void Point::translada(float a, float b){
-    Point p;
-    p.x = x+a;
-    p.y = y+b;
+    x = x+a;
+    y = y+b;
 }
 
-void Point::imprime(Point p1){
-    cout<<"("<<p1.x<<", "<<p1.y<<")"<<endl;
+void Point::imprime(){
+    cout<<"("<<x<<", "<<y<<")"<<endl;
 }
+
 
 
 
