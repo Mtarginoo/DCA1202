@@ -1,12 +1,27 @@
 #include <iostream>
 #include "point.h"
+#include "poligono.h"
 
 using namespace std;
 
 int main()
 {
-    Point p1, p2, p3;
-    float norma;
+    Point p1, p2, p3, p4;
+    p1.setXY(0, 0);
+    p2.setXY(4, 0);
+    p3.setXY(4, 4);
+    Poligono pol1(p1, p2, p3);
+    p4.setXY(0, 4);
+    pol1.addVertice(p4);
+    float a;
+    a = pol1.areaPoligono();
+    cout << "A area do poligono eh: " << a << endl;
+    pol1.imprimePol();
+    pol1.transladaPol(2, 2);
+    pol1.imprimePol();
+    pol1.rotacionaPol(90.0, p1);
+    pol1.imprimePol();
+    /*
     p1.setX(3);
     p1.setY(9);
     cout << "P1: ";
@@ -33,5 +48,6 @@ int main()
     p1.translada(10, 10);
     cout << "\nP1 TRANSLADADO: ";
     p1.imprime();
+    */
     return 0;
 }

@@ -51,9 +51,11 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../Projeto_1/main.cpp \
-		../Projeto_1/point.cpp 
+		../Projeto_1/point.cpp \
+		../Projeto_1/poligono.cpp 
 OBJECTS       = main.o \
-		point.o
+		point.o \
+		poligono.o
 DIST          = /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/common/unix.conf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/common/linux.conf \
@@ -223,6 +225,7 @@ DIST          = /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_pre
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/qt_config.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_post.prf \
+		../Projeto_1/.qmake.stash \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/toolchain.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -237,8 +240,10 @@ DIST          = /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_pre
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/yacc.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/lex.prf \
 		../Projeto_1/Projeto_1.pro point.h \
-		point.h ../Projeto_1/main.cpp \
-		../Projeto_1/point.cpp
+		point.h \
+		poligono.h ../Projeto_1/main.cpp \
+		../Projeto_1/point.cpp \
+		../Projeto_1/poligono.cpp
 QMAKE_TARGET  = Projeto_1
 DESTDIR       = 
 TARGET        = Projeto_1
@@ -419,6 +424,7 @@ Makefile: ../Projeto_1/Projeto_1.pro /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mksp
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/qt_config.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/toolchain.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -603,6 +609,7 @@ Makefile: ../Projeto_1/Projeto_1.pro /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mksp
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/qt_config.prf:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/toolchain.prf:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/default_pre.prf:
@@ -660,11 +667,16 @@ compiler_clean:
 
 ####### Compile
 
-main.o: ../Projeto_1/main.cpp 
+main.o: ../Projeto_1/main.cpp ../Projeto_1/point.h \
+		../Projeto_1/poligono.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Projeto_1/main.cpp
 
 point.o: ../Projeto_1/point.cpp ../Projeto_1/point.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o point.o ../Projeto_1/point.cpp
+
+poligono.o: ../Projeto_1/poligono.cpp ../Projeto_1/poligono.h \
+		../Projeto_1/point.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o poligono.o ../Projeto_1/poligono.cpp
 
 ####### Install
 
