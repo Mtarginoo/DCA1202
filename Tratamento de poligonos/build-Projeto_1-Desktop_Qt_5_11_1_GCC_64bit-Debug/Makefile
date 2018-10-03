@@ -35,7 +35,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Projeto_11.0.0
-DISTDIR = /home/mtarginoo/Documentos/UFRN/BCT/Quinto\ Semestre/Programação\ Avançada/DCA1202/Projeto_1/build-Projeto_1-Desktop_Qt_5_11_1_GCC_64bit-Debug/.tmp/Projeto_11.0.0
+DISTDIR = /home/mtarginoo/Documentos/UFRN/BCT/Quinto\ Semestre/Programação\ Avançada/DCA1202/Tratamento\ de\ poligonos/build-Projeto_1-Desktop_Qt_5_11_1_GCC_64bit-Debug/.tmp/Projeto_11.0.0
 LINK          = g++
 LFLAGS        = 
 LIBS          = $(SUBLIBS)  
@@ -227,7 +227,6 @@ DIST          = /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_pre
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/qt_config.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_post.prf \
-		../Projeto_1/.qmake.stash \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/toolchain.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -428,7 +427,6 @@ Makefile: ../Projeto_1/Projeto_1.pro /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mksp
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/qt_config.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/toolchain.prf \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -613,7 +611,6 @@ Makefile: ../Projeto_1/Projeto_1.pro /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mksp
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/qt_config.prf:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/spec_post.prf:
-.qmake.stash:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/toolchain.prf:
 /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/mkspecs/features/default_pre.prf:
@@ -672,7 +669,8 @@ compiler_clean:
 ####### Compile
 
 main.o: ../Projeto_1/main.cpp ../Projeto_1/point.h \
-		../Projeto_1/poligono.h
+		../Projeto_1/poligono.h \
+		../Projeto_1/retangulo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Projeto_1/main.cpp
 
 point.o: ../Projeto_1/point.cpp ../Projeto_1/point.h
