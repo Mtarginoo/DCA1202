@@ -54,27 +54,40 @@ void Poligono::transladaPol(float a, float b)
 void Poligono::imprimePol()
 {
     for (int i = 0; i < contVert; i++) {
+        cout.precision(0);
         cout << "(" << vertices[i].getX() << ", " << vertices[i].getY() << ") -> ";
         if(i == contVert - 1) {
+            cout.precision(0);
             cout << "(" << vertices[0].getX() << ", " << vertices[0].getY() << ")" << endl;
         }
     }
 }
 
 void Poligono::rotacionaPol(float angle, Point P){
-    float co = cos(angle*PI/(float)180.0);
-    float se = sin(angle*PI/(float)180.0);
+    float co = cos(angle*PI/180.0);
+    float se = sin(angle*PI/180.0);
     float xEixo, yEixo, xPonto ,yPonto;
+    xEixo = P.getX();
+    yEixo = P.getY();
+
 
     for(int i=0; i<contVert; i++){
-        xEixo = P.getX();
-        yEixo = P.getY();
+
         xPonto = vertices[i].getX();
         yPonto = vertices[i].getY();
 
-        vertices[i].setX(xEixo + co*(xPonto - xEixo) - se*(yPonto - yEixo));
-        vertices[i].setY(yEixo + se*(xPonto - xEixo) + co*(yPonto - yEixo));
+        if(!(xPonto == xEixo && yPonto == yEixo)){
+            vertices[i].setX(xEixo + co*(xPonto - xEixo) - se*(yPonto - yEixo));
+            vertices[i].setY(yEixo + se*(xPonto - xEixo) + co*(yPonto - yEixo));
+            if(vertices[i].getX()<0.01&&vertices[i].getX()>0){
+                vertices[i].setX(0);
+            }
+            if(vertices[i].getY()<0.01&&vertices[i].getY()){
+                vertices[i].setY(0);
+            }
+        }
     }
 }
+
 
 

@@ -6,7 +6,14 @@ using namespace std;
 
 int main()
 {
-    Point p1, p2, p3, p4;
+
+
+
+
+
+
+
+    /*Point p1, p2, p3, p4, p5;
     p1.setXY(0, 0);
     p2.setXY(4, 0);
     p3.setXY(4, 4);
@@ -17,9 +24,10 @@ int main()
     a = pol1.areaPoligono();
     cout << "A area do poligono eh: " << a << endl;
     pol1.imprimePol();
-    pol1.transladaPol(2, 2);
-    pol1.imprimePol();
-    pol1.rotacionaPol(90.0, p1);
+    //pol1.transladaPol(2, 2);
+    //pol1.imprimePol();
+    p5.setXY(4,4);
+    pol1.rotacionaPol(90.0,p1);
     pol1.imprimePol();
     /*
     p1.setX(3);
@@ -49,5 +57,6 @@ int main()
     cout << "\nP1 TRANSLADADO: ";
     p1.imprime();
     */
+
     return 0;
 }

@@ -10,6 +10,7 @@ private:
     int contVert;
     Point vertices[100];
 public:
+    Poligono();
     Poligono(Point, Point, Point);
     void addVertice(Point);
     int qtdVertice();
