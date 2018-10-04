@@ -15,8 +15,6 @@ int main()
     largura = 4;
 
     Retangulo ret1(x, y, altura, largura);
-    Retangulo ret2(x, y, 2, 2);
-    centro = ret2.centroMassa();
     ret1.imprimePol();
     area = ret1.areaPoligono();
     cout<<"A area do retangulo eh: "<<area<<" u.a\n";
