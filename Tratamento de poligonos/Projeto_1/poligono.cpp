@@ -67,7 +67,7 @@ void Poligono::imprimePol()
     }
 }
 
-void Poligono::rotacionaPol(float angle, Point P){
+/*void Poligono::rotacionaPol(float angle, Point P){
     float co = cos(angle*PI/180.0);
     float se = sin(angle*PI/180.0);
     float xEixo, yEixo, xPonto ,yPonto;
@@ -90,6 +90,17 @@ void Poligono::rotacionaPol(float angle, Point P){
                 vertices[i].setY(0);
             }
         }
+    }
+}*/
+
+void Poligono::rotacionaPol(float ang, Point p){
+
+    ang = (ang*M_PI)/180;
+    float novoX, novoY;
+    for(int i=0;i<contVert;i++){
+        novoX = p.getX() + (vertices[i].getX() - p.getX()) * cos(ang) - (vertices[i].getY() - p.getY())*sin(ang);
+        novoY = p.getY() + (vertices[i].getX() - p.getX())*sin(ang) + (vertices[i].getY() - p.getY())*cos(ang);
+        vertices[i].setXY(novoX, novoY);
     }
 }
 

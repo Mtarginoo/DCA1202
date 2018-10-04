@@ -34,7 +34,7 @@ int main()
     ret1.rotacionaPol(30.0, centro);
     ret1.imprimePol();
     area3 = ret1.areaPoligono();
-    cout<<"A area do retangulo rotacionado eh: "<<area3<<" u.a \n";
+    cout<<"A area do retangulo rotacionado eh: "<<area3<<" u.a \n\n";
 
 
     /*Point p1, p2, p3, p4;
