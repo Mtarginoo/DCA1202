@@ -67,31 +67,7 @@ void Poligono::imprimePol()
     }
 }
 
-/*void Poligono::rotacionaPol(float angle, Point P){
-    float co = cos(angle*PI/180.0);
-    float se = sin(angle*PI/180.0);
-    float xEixo, yEixo, xPonto ,yPonto;
-    xEixo = P.getX();
-    yEixo = P.getY();
 
-
-    for(int i=0; i<contVert; i++){
-
-        xPonto = vertices[i].getX();
-        yPonto = vertices[i].getY();
-
-        if(!(xPonto == xEixo && yPonto == yEixo)){
-            vertices[i].setX(xEixo + co*(xPonto - xEixo) - se*(yPonto - yEixo));
-            vertices[i].setY(yEixo + se*(xPonto - xEixo) + co*(yPonto - yEixo));
-            if(vertices[i].getX()<0.01&&vertices[i].getX()>0){
-                vertices[i].setX(0);
-            }
-            if(vertices[i].getY()<0.01&&vertices[i].getY()){
-                vertices[i].setY(0);
-            }
-        }
-    }
-}*/
 
 void Poligono::rotacionaPol(float ang, Point p){
 
@@ -110,16 +86,16 @@ Point Poligono::centroMassa(){
     Point centro;
     for(int i=0; i<contVert-1; i++){
         x0 = vertices[i].getX();
-        y0 = vertices[i].getY(); //ponto atual
+        y0 = vertices[i].getY();
 
         x1 = vertices[i+1].getX();
-        y1 = vertices[i+1].getY(); //proximo ponto
+        y1 = vertices[i+1].getY();
 
         cx += (x0 + x1)*(x0 * y1 - x1 * y0);
         cy += (y0 + y1)*(x0 * y1 - x1 * y0);
     }
 
-    //proxima iteracao deve ser com o primeiro e ultimo ponto: p[numVert-1] e p[0]
+
     x0 = vertices[contVert-1].getX();
     y0 = vertices[contVert-1].getY();
 
