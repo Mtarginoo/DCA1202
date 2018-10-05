@@ -1,0 +1,134 @@
+\hypertarget{classPoligono}{}\section{Poligono Class Reference}
+\label{classPoligono}\index{Poligono@{Poligono}}
+
+
+The \hyperlink{classPoligono}{Poligono} class serve para estabelecer informações báiscas de um \hyperlink{classPoligono}{Poligono}.  
+
+
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+
+
+Inheritance diagram for Poligono\+:
+% FIG 0
+
+
+Collaboration diagram for Poligono\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoligono_a9311a9a1496878c09c8508b3636e2870}\label{classPoligono_a9311a9a1496878c09c8508b3636e2870}} 
+\hyperlink{classPoligono_a9311a9a1496878c09c8508b3636e2870}{Poligono} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono}{Poligono} construtor da classe poligono. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoligono_a8bffb5ac16f8cceb8575ec711f8a87c9}\label{classPoligono_a8bffb5ac16f8cceb8575ec711f8a87c9}} 
+\hyperlink{classPoligono_a8bffb5ac16f8cceb8575ec711f8a87c9}{Poligono} (\hyperlink{classPoint}{Point}, \hyperlink{classPoint}{Point}, \hyperlink{classPoint}{Point})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classPoligono}{Poligono} Instanciando um poligono com pelo menos 3 pontos inicialmente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoligono_a8cd3fcb41f266c45235355cc0d9548d8}\label{classPoligono_a8cd3fcb41f266c45235355cc0d9548d8}} 
+void \hyperlink{classPoligono_a8cd3fcb41f266c45235355cc0d9548d8}{add\+Vertice} (\hyperlink{classPoint}{Point})
+\begin{DoxyCompactList}\small\item\em add\+Vertice Adiciona mais um vértice a um poligono, passando no método o ponto a ser adicionado. \end{DoxyCompactList}\item 
+int \hyperlink{classPoligono_ac2a15e335f5a846552d64f568d4e0984}{qtd\+Vertice} ()
+\begin{DoxyCompactList}\small\item\em qtd\+Vertice Método que retorna a quantidade de vértices de um determinado poligono. \end{DoxyCompactList}\item 
+float \hyperlink{classPoligono_ac1e37e274f61dff6c421f972ef1cf891}{area\+Poligono} ()
+\begin{DoxyCompactList}\small\item\em area\+Poligono Método que calcula a área de um determinado poligono. \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_a51e09ad81921289ed6fa8bf85b492ba7}{translada\+Pol} (float, float)
+\begin{DoxyCompactList}\small\item\em translada\+Pol método que translada um poligono. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPoligono_a21b124867ac9d4aa7e9a06fc0219b211}\label{classPoligono_a21b124867ac9d4aa7e9a06fc0219b211}} 
+void \hyperlink{classPoligono_a21b124867ac9d4aa7e9a06fc0219b211}{imprime\+Pol} ()
+\begin{DoxyCompactList}\small\item\em imprime\+Pol Método que imprime os vertices do poligono no sentido anti-\/horário na forma (x0, y0) -\/ $>$ (x1, y1) -\/$>$ ... \end{DoxyCompactList}\item 
+void \hyperlink{classPoligono_a41f8b6abd536f6e0a0c522db5069268d}{rotaciona\+Pol} (float, \hyperlink{classPoint}{Point})
+\begin{DoxyCompactList}\small\item\em rotaciona\+Pol Método que rotaciona um poligono em torno de um dado ponto em um determinado ângulo. \end{DoxyCompactList}\item 
+\hyperlink{classPoint}{Point} \hyperlink{classPoligono_af650a4d2d081b65fadb012222c465cb1}{centro\+Massa} ()
+\begin{DoxyCompactList}\small\item\em centro\+Massa Método que calcula o centro de massa de um dado poligono. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoligono_ae11999d79ac8ffd8b05e504f89230c3a}\label{classPoligono_ae11999d79ac8ffd8b05e504f89230c3a}} 
+int {\bfseries cont\+Vert}
+\item 
+\mbox{\Hypertarget{classPoligono_a18179d267bdf366f6bb00a4e1b16f1d7}\label{classPoligono_a18179d267bdf366f6bb00a4e1b16f1d7}} 
+\hyperlink{classPoint}{Point} {\bfseries vertices} \mbox{[}100\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classPoligono}{Poligono} class serve para estabelecer informações báiscas de um \hyperlink{classPoligono}{Poligono}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoligono_ac1e37e274f61dff6c421f972ef1cf891}\label{classPoligono_ac1e37e274f61dff6c421f972ef1cf891}} 
+\index{Poligono@{Poligono}!area\+Poligono@{area\+Poligono}}
+\index{area\+Poligono@{area\+Poligono}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{area\+Poligono()}{areaPoligono()}}
+{\footnotesize\ttfamily float Poligono\+::area\+Poligono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+area\+Poligono Método que calcula a área de um determinado poligono. 
+
+\begin{DoxyReturn}{Returns}
+float $<$area\+\_\+do\+\_\+poligono$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoligono_af650a4d2d081b65fadb012222c465cb1}\label{classPoligono_af650a4d2d081b65fadb012222c465cb1}} 
+\index{Poligono@{Poligono}!centro\+Massa@{centro\+Massa}}
+\index{centro\+Massa@{centro\+Massa}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{centro\+Massa()}{centroMassa()}}
+{\footnotesize\ttfamily \hyperlink{classPoint}{Point} Poligono\+::centro\+Massa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+centro\+Massa Método que calcula o centro de massa de um dado poligono. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classPoint}{Point} $<$ponto\+\_\+do\+\_\+centro\+\_\+de\+\_\+massa$>$. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoligono_ac2a15e335f5a846552d64f568d4e0984}\label{classPoligono_ac2a15e335f5a846552d64f568d4e0984}} 
+\index{Poligono@{Poligono}!qtd\+Vertice@{qtd\+Vertice}}
+\index{qtd\+Vertice@{qtd\+Vertice}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{qtd\+Vertice()}{qtdVertice()}}
+{\footnotesize\ttfamily int Poligono\+::qtd\+Vertice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+qtd\+Vertice Método que retorna a quantidade de vértices de um determinado poligono. 
+
+\begin{DoxyReturn}{Returns}
+int $<$quantidade\+\_\+de\+\_\+vertices$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoligono_a41f8b6abd536f6e0a0c522db5069268d}\label{classPoligono_a41f8b6abd536f6e0a0c522db5069268d}} 
+\index{Poligono@{Poligono}!rotaciona\+Pol@{rotaciona\+Pol}}
+\index{rotaciona\+Pol@{rotaciona\+Pol}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{rotaciona\+Pol()}{rotacionaPol()}}
+{\footnotesize\ttfamily void Poligono\+::rotaciona\+Pol (\begin{DoxyParamCaption}\item[{float}]{ang,  }\item[{\hyperlink{classPoint}{Point}}]{p }\end{DoxyParamCaption})}
+
+
+
+rotaciona\+Pol Método que rotaciona um poligono em torno de um dado ponto em um determinado ângulo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em float} & $<$angulo\+\_\+em\+\_\+graus$>$ , \hyperlink{classPoint}{Point} $<$eixo\+\_\+de\+\_\+rotacao$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoligono_a51e09ad81921289ed6fa8bf85b492ba7}\label{classPoligono_a51e09ad81921289ed6fa8bf85b492ba7}} 
+\index{Poligono@{Poligono}!translada\+Pol@{translada\+Pol}}
+\index{translada\+Pol@{translada\+Pol}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{translada\+Pol()}{transladaPol()}}
+{\footnotesize\ttfamily void Poligono\+::translada\+Pol (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+translada\+Pol método que translada um poligono. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordenadas} & x e y do deslocamento do poligono. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+poligono.\+h\item 
+poligono.\+cpp\end{DoxyCompactItemize}
