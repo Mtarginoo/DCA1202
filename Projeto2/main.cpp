@@ -22,10 +22,10 @@ int main()
     input.open("/home/mtarginoo/Documentos/UFRN/BCT/Quinto\ Semestre/Programação\ Avançada/DCA1202/Projeto2/input.txt");
 
     if(input.is_open()){
-        cout<<"Arquivo aberto"<<endl;
+        cout<<"Arquivo de entrada aberto"<<endl;
     }
     else{
-        cout<<"Falha ao tentar abrir arquivo"<<endl;
+        cout<<"Falha ao tentar abrir arquivo de entrada"<<endl;
     }
 
     input>>comando;
@@ -41,10 +41,18 @@ int main()
             tela.setBrush(brush);
             r.draw(tela);
         }
-        /*else if(strcmp("rectangle", comando)==0){
+        else if(strcmp("rectangle", comando)==0){
             input>>x0>>y0>>largura>>altura>>fillmode>>brush;
-            Retangulo ret()
-        }*/
+            Retangulo ret(x0, y0, largura, altura, fillmode);
+            tela.setBrush(brush);
+            ret.draw(tela);
+        }
+        else if(strcmp("circle", comando)==0){
+            input>>x0>>y0>>raio>>fillmode>>brush;
+            Circulo c(x0,y0,raio,fillmode);
+             tela.setBrush(brush);
+             c.draw(tela);
+        }
         input>>comando;
     }
 
@@ -52,7 +60,7 @@ int main()
 
     output.open("/home/mtarginoo/Documentos/UFRN/BCT/Quinto\ Semestre/Programação\ Avançada/DCA1202/Projeto2/output.txt");
     if(!output.is_open()){
-        cout<<"Falha ao abrir o arquivo"<<endl;
+        cout<<"Falha ao abrir o arquivo de saida"<<endl;
     }
 
     output<<tela;

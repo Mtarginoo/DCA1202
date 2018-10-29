@@ -1,4 +1,9 @@
 dim 50 50
-line 5 5 10 10 t
+line 5 5 10 10 *
+circle 25 25 10 1 .
+rectangle 10 10 5 10 0 @
+
+
+
 
 
