@@ -7,7 +7,7 @@ using namespace std;
 Screen::Screen(int _ncol, int _nlin){
     nlin = _nlin;
     ncol = _ncol;
-    mat = vector<vector<char>>(nlin, vector<char>(ncol,'*'));//alocando matriz de vetor de vetor de char e preenchendo com espaços.
+    mat = vector<vector<char>>(nlin, vector<char>(ncol,' '));//alocando matriz de vetor de vetor de char e preenchendo com espaços.
 }
 
 void Screen::setPixel(int x, int y){

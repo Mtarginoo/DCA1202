@@ -24,3 +24,5 @@ void Reta::draw(Screen &t){
 }
 
 
+
+
