@@ -1,0 +1,46 @@
+\hypertarget{classCirculo}{}\section{Circulo Class Reference}
+\label{classCirculo}\index{Circulo@{Circulo}}
+
+
+Inheritance diagram for Circulo\+:
+% FIG 0
+
+
+Collaboration diagram for Circulo\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCirculo_aa2303b9a3d9e878af7f530143cfde0fb}\label{classCirculo_aa2303b9a3d9e878af7f530143cfde0fb}} 
+{\bfseries Circulo} (int \+\_\+x, int \+\_\+y, int \+\_\+raio, bool \+\_\+p)
+\item 
+void \hyperlink{classCirculo_a593787d6e0618c2eded23e8839e7bea6}{draw} (\hyperlink{classScreen}{Screen} \&t)
+\begin{DoxyCompactList}\small\item\em draw é o método da classe \hyperlink{classFiguraGeometrica}{Figura\+Geometrica} que serve para desenhar o círculo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCirculo_a593787d6e0618c2eded23e8839e7bea6}\label{classCirculo_a593787d6e0618c2eded23e8839e7bea6}} 
+\index{Circulo@{Circulo}!draw@{draw}}
+\index{draw@{draw}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Circulo\+::draw (\begin{DoxyParamCaption}\item[{\hyperlink{classScreen}{Screen} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw é o método da classe \hyperlink{classFiguraGeometrica}{Figura\+Geometrica} que serve para desenhar o círculo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & é um ponteiro para uma variável do tipo \hyperlink{classScreen}{Screen}. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classFiguraGeometrica_a8ee8dedc060b6059a805ea091aef2c41}{Figura\+Geometrica}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+circulo.\+h\item 
+circulo.\+cpp\end{DoxyCompactItemize}
