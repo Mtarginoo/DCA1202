@@ -14,8 +14,8 @@ Retangulo::Retangulo(int _xi, int _yi, int _largura, int _altura, bool _fillmode
 
 void Retangulo::draw(Screen &t){
     if(fillmode){
-        for(int i=yi; i<(yi+altura); i++){
-            for(int j=xi;j<(xi+largura); j++){
+        for(int i=xi; i<(xi+largura); i++){
+            for(int j=yi;j<(yi+altura); j++){
                 t.setPixel(i,j);
             }
         }

@@ -10,7 +10,7 @@ raio = _raio;
 p = _p;
 }
 
-void Circulo::draw(Screen &t){
+/*void Circulo::draw(Screen &t){
    int x0, y0, x1, y1, y_temp;
    x0 = x-raio;
    y0 = y-raio;
@@ -36,9 +36,9 @@ void Circulo::draw(Screen &t){
        }
    }
 
-}
+}*/
 
-/*void Circulo::draw(Screen &t){
+void Circulo::draw(Screen &t){
     float dp;
     if(!p){
         for(int i=(x-raio); i<=(x+raio); i++){
@@ -62,4 +62,4 @@ void Circulo::draw(Screen &t){
 
    }
 
-}*/
+}
