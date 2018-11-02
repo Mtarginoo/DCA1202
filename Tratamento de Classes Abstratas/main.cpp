@@ -19,7 +19,7 @@ int main()
     Screen tela(10,10);
     char comando[9];
 
-    input.open("/home/mtarginoo/Documentos/UFRN/BCT/Quinto\ Semestre/Programação\ Avançada/DCA1202/Projeto2/input.txt");
+    input.open("/home/mtarginoo/Documentos/UFRN/BCT/Quinto\ Semestre/Programação\ Avançada/DCA1202/Tratamento\ de\ Classes\ Abstratas/input.txt");
 
     if(input.is_open()){
         cout<<"Arquivo de entrada aberto"<<endl;
