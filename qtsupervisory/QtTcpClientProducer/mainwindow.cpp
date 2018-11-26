@@ -5,27 +5,22 @@
 #include <QString>
 
 MainWindow::MainWindow(QWidget *parent) :
-  QMainWindow(parent), ui(new Ui::MainWindow){
-  ui->setupUi(this);
-  socket = new QTcpSocket(this);
+    QMainWindow(parent), ui(new Ui::MainWindow){
+    ui->setupUi(this);
+    socket = new QTcpSocket(this);
 
-
-  /*connect(ui->pushButtonPut,
-          SIGNAL(clicked(bool)),
-          this,
-          SLOT(putData()));*/
-  connect(ui->pushButtonConnect,
-          SIGNAL(clicked(bool)),
-          this,
-          SLOT(tcpConnect()));
-  connect(ui->pushButtonDisconnect,
-          SIGNAL(clicked(bool)),
-          this,
-          SLOT(disconTcp()));
-  connect(ui->horizontalSliderTimming,
-          SIGNAL(valueChanged(int)),
-          this,
-          SLOT(setIntervalo()));
+    connect(ui->pushButtonConnect,
+            SIGNAL(clicked(bool)),
+            this,
+            SLOT(tcpConnect()));
+    connect(ui->pushButtonDisconnect,
+            SIGNAL(clicked(bool)),
+            this,
+            SLOT(disconTcp()));
+    connect(ui->horizontalSliderTimming,
+            SIGNAL(valueChanged(int)),
+            this,
+            SLOT(setIntervalo()));
     connect(ui->pushButtonStart,
             SIGNAL(clicked(bool)),
             this,
@@ -41,29 +36,29 @@ MainWindow::MainWindow(QWidget *parent) :
 }
 
 void MainWindow::tcpConnect(){
-  socket->connectToHost(ui->lineEditIP->text(), 1234);
-  if(socket->waitForConnected(3000)){
-    qDebug() << "Connected";
-    atualizaDados("Connected\n");
-  }
-  else{
-    qDebug() << "Disconnected";
-    atualizaDados("Disconnected\n");
-  }
+    socket->connectToHost(ui->lineEditIP->text(), 1234);
+    if(socket->waitForConnected(3000)){
+        qDebug() << "Connected";
+        atualizaDados("Connected\n");
+    }
+    else{
+        qDebug() << "Disconnected";
+        atualizaDados("Disconnected\n");
+    }
 }
 
 void MainWindow::disconTcp()
 {
-     socket->disconnectFromHost();
-        if(socket->waitForConnected(3000)){
-            atualizaDados("Connected\n");
-            qDebug() << "Connected";
-        }
-        else{
-            atualizaDados("Disconnected\n");
-            qDebug() << "Disconnect";
-        }
-     temp ->stop();
+    socket->disconnectFromHost();
+    if(socket->waitForConnected(3000)){
+        atualizaDados("Connected\n");
+        qDebug() << "Connected";
+    }
+    else{
+        atualizaDados("Disconnected\n");
+        qDebug() << "Disconnect";
+    }
+    temp ->stop();
 }
 
 void MainWindow::setIntervalo(){
@@ -95,7 +90,7 @@ void MainWindow::putData(){
                 date.toString(Qt::ISODate) +
                 " " +
                 QString::number((qrand()%(1+max-min)) + min) + "\r\n";
-        //gera valores aleatórios dentro do intervalo FECHADO de [valor no lcdMin, valor no lcdMax]
+
     }
 
     atualizaDados(s);
@@ -108,19 +103,19 @@ void MainWindow::putData(){
 }
 
 void MainWindow::startTemp(){
-     if(socket->waitForConnected(0)){
+    if(socket->waitForConnected(0)){
         temp->start(ui->horizontalSliderTimming->value()*1000);
-     }
+    }
 }
 
 void MainWindow::stopTemp(){
-     temp->stop();
+    temp->stop();
 }
 
 
 
 MainWindow::~MainWindow(){
-  delete socket;
-  delete ui;
-  delete temp;
+    delete socket;
+    delete ui;
+    delete temp;
 }
