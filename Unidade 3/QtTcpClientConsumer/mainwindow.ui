@@ -41,7 +41,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>12</y>
+      <y>13</y>
       <width>268</width>
       <height>399</height>
      </rect>
@@ -80,7 +80,7 @@
       </layout>
      </item>
      <item>
-      <widget class="QListView" name="listViewIP"/>
+      <widget class="QListWidget" name="listWidgetIP"/>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_4">

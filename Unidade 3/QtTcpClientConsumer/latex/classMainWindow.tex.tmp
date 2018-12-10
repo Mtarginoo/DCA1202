@@ -1,0 +1,66 @@
+\hypertarget{classMainWindow}{}\section{Main\+Window Class Reference}
+\label{classMainWindow}\index{Main\+Window@{Main\+Window}}
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a4a2ddf4cf2ec8e240cc340416b1df792}\label{classMainWindow_a4a2ddf4cf2ec8e240cc340416b1df792}} 
+void \hyperlink{classMainWindow_a4a2ddf4cf2ec8e240cc340416b1df792}{get\+Data} ()
+\begin{DoxyCompactList}\small\item\em get\+Data Método usado para receber os dados do servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_ac5b669957c442b6eb68573dacfce33e1}\label{classMainWindow_ac5b669957c442b6eb68573dacfce33e1}} 
+void \hyperlink{classMainWindow_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Connect Método usado para conectar o cliente consumidor ao servidor com o endereço fornecido pelo usuário \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_a4d22c4c7afc7ba0a2fa4c70515c85dda}\label{classMainWindow_a4d22c4c7afc7ba0a2fa4c70515c85dda}} 
+void \hyperlink{classMainWindow_a4d22c4c7afc7ba0a2fa4c70515c85dda}{tcp\+Disconnect} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Disconnect Método usado para desconectar o cliente consumidor do servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_a05452a903d6d54ef41b85ebafba691ac}\label{classMainWindow_a05452a903d6d54ef41b85ebafba691ac}} 
+void \hyperlink{classMainWindow_a05452a903d6d54ef41b85ebafba691ac}{tcp\+Start\+Temp} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Start\+Temp Método que serve para iniciar o temporizador usado na aquisição dos dados \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_a5a3e1860184dd3ee289edd6b254df313}\label{classMainWindow_a5a3e1860184dd3ee289edd6b254df313}} 
+void \hyperlink{classMainWindow_a5a3e1860184dd3ee289edd6b254df313}{tcp\+Stop\+Temp} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Stop\+Temp Método que serve para iniciar o temporizador usado na aquisição dos dados \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_a128f71880d4b9683149023fc46fcc9f8}\label{classMainWindow_a128f71880d4b9683149023fc46fcc9f8}} 
+void \hyperlink{classMainWindow_a128f71880d4b9683149023fc46fcc9f8}{update} ()
+\begin{DoxyCompactList}\small\item\em update Método que serve para atualizar a listas de endereços IP disponíveis para conectar com o cliente consumidor \end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a3e6b3715027cdcb187bb0ef0cc014773}{select\+IP} (Q\+List\+Widget\+Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em select\+IP Método que serve para que o usuário indique o endereço a ser conectado pelo cliente consumidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_af0a96fb998d061de1127b8a394b43583}\label{classMainWindow_af0a96fb998d061de1127b8a394b43583}} 
+void \hyperlink{classMainWindow_af0a96fb998d061de1127b8a394b43583}{set\+Intervalo} ()
+\begin{DoxyCompactList}\small\item\em set\+Intervalo Método que serve para que o usuário insira um intervalo em que os dados sejam plotados na tela \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}\label{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}} 
+{\bfseries Main\+Window} (Q\+Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainWindow_a3e6b3715027cdcb187bb0ef0cc014773}\label{classMainWindow_a3e6b3715027cdcb187bb0ef0cc014773}} 
+\index{Main\+Window@{Main\+Window}!select\+IP@{select\+IP}}
+\index{select\+IP@{select\+IP}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{select\+IP}{selectIP}}
+{\footnotesize\ttfamily void Main\+Window\+::select\+IP (\begin{DoxyParamCaption}\item[{Q\+List\+Widget\+Item $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+select\+IP Método que serve para que o usuário indique o endereço a ser conectado pelo cliente consumidor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & ponteiro que aponta para o IP a ser passado \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

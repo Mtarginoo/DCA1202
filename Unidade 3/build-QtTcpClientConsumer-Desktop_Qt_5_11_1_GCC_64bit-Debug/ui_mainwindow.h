@@ -14,7 +14,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QListView>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -41,7 +41,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *pushButtonConnect;
     QPushButton *pushButtonDisconnect;
-    QListView *listViewIP;
+    QListWidget *listWidgetIP;
     QHBoxLayout *horizontalLayout_4;
     QSpacerItem *horizontalSpacer;
     QPushButton *pushButtonUpdate;
@@ -72,7 +72,7 @@ public:
         widget->setGeometry(QRect(250, 11, 350, 399));
         widget1 = new QWidget(centralWidget);
         widget1->setObjectName(QStringLiteral("widget1"));
-        widget1->setGeometry(QRect(10, 12, 268, 399));
+        widget1->setGeometry(QRect(10, 13, 268, 399));
         verticalLayout_3 = new QVBoxLayout(widget1);
         verticalLayout_3->setSpacing(6);
         verticalLayout_3->setContentsMargins(11, 11, 11, 11);
@@ -110,10 +110,10 @@ public:
 
         verticalLayout_3->addLayout(verticalLayout);
 
-        listViewIP = new QListView(widget1);
-        listViewIP->setObjectName(QStringLiteral("listViewIP"));
+        listWidgetIP = new QListWidget(widget1);
+        listWidgetIP->setObjectName(QStringLiteral("listWidgetIP"));
 
-        verticalLayout_3->addWidget(listViewIP);
+        verticalLayout_3->addWidget(listWidgetIP);
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setSpacing(6);

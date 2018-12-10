@@ -7,8 +7,7 @@
 
 MainWindow::MainWindow(QWidget *parent) :
   QMainWindow(parent),
-  ui(new Ui::MainWindow)
-{
+  ui(new Ui::MainWindow){
   ui->setupUi(this);
   socket = new QTcpSocket(this);
 
@@ -24,10 +23,10 @@ MainWindow::MainWindow(QWidget *parent) :
           SIGNAL(clicked(bool)),
           this,
           SLOT(tcpDisconnect()));
-  connect(ui->listViewIP,
+  connect(ui->listWidgetIP,
           SIGNAL(itemDoubleClicked(QListWidgetItem*)),
           this,
-          SLOT(tcpStartTemp()));
+          SLOT(tcpStartTemp(QListWidgetItem*)));
   connect(ui->pushButtonUpdate,
           SIGNAL(clicked(bool)),
           this,
@@ -42,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent) :
           SLOT(setIntervalo()));
 
   ui->labelTiming->setNum(ui->horizontalSliderTiming->value());
-  ui->listViewIP->addItem("127.0.0.1");
+  ui->listWidgetIP->addItem("127.0.0.1");
 }
 
 void MainWindow::tcpConnect(){
@@ -112,7 +111,7 @@ void MainWindow::selectIP(QListWidgetItem* item){
 
 void MainWindow::update(){
     QString str = ui->lineEditIP->text();
-    if(str != "")  ui->listViewIP->addItem(str);
+    if(str != "")  ui->listWidgetIP->addItem(str);
 }
 MainWindow::~MainWindow()
 {
