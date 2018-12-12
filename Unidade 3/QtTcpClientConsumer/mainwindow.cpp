@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
   ui->setupUi(this);
   socket = new QTcpSocket(this);
 
-  connect(ui->pushButtonGet,
+  connect(ui->pushButtonStart,
           SIGNAL(clicked(bool)),
           this,
           SLOT(getData()));
@@ -26,7 +26,15 @@ MainWindow::MainWindow(QWidget *parent) :
   connect(ui->listWidgetIP,
           SIGNAL(itemDoubleClicked(QListWidgetItem*)),
           this,
-          SLOT(tcpStartTemp(QListWidgetItem*)));
+          SLOT(selectIP(QListWidgetItem*)));
+  connect(ui->pushButtonStart,
+          SIGNAL(clicked(bool)),
+          this,
+          SLOT(tcpStartTemp()));
+  connect(ui->pushButtonStop,
+          SIGNAL(clicked(bool)),
+          this,
+          SLOT(tcpStopTemp()));
   connect(ui->pushButtonUpdate,
           SIGNAL(clicked(bool)),
           this,
@@ -40,8 +48,9 @@ MainWindow::MainWindow(QWidget *parent) :
           this,
           SLOT(setIntervalo()));
 
+
   ui->labelTiming->setNum(ui->horizontalSliderTiming->value());
-  ui->listWidgetIP->addItem("127.0.0.1");
+ // ui->listWidgetIP->addItem("127.0.0.1");
 }
 
 void MainWindow::tcpConnect(){
@@ -66,27 +75,39 @@ void MainWindow::tcpDisconnect(){
 }
 
 void MainWindow::getData(){
-  QString str;
+  std::vector<float> data;
+  QString str = ui->lineEditIP->text();
   QByteArray array;
   QStringList list;
   qint64 thetime;
   qDebug() << "to get data...";
+
   if(socket->state() == QAbstractSocket::ConnectedState){
     if(socket->isOpen()){
+      QString comando = "get " + str + " 10\r\n";
       qDebug() << "reading...";
-      socket->write("get 127.0.0.1 5\r\n");
+      qDebug() << comando;
+      socket->write(comando.toStdString().c_str());
       socket->waitForBytesWritten();
       socket->waitForReadyRead();
+
       qDebug() << socket->bytesAvailable();
       while(socket->bytesAvailable()){
+
         str = socket->readLine().replace("\n","").replace("\r","");
         list = str.split(" ");
+
         if(list.size() == 2){
           bool ok;
+
           str = list.at(0);
           thetime = str.toLongLong(&ok);
+
           str = list.at(1);
-          qDebug() << thetime << ": " << str;
+          dados.append(str.toInt(&ok));
+
+          //qDebug() << thetime << ": " << str;
+          qDebug()<<list.at(0) <<": "<< list.at(1);
         }
       }
     }

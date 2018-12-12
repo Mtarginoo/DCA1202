@@ -817,6 +817,27 @@ moc_mainwindow.cpp: /home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QMa
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtNetwork/qabstractsocket.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QDebug \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QWidget \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QTimer \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qtimer.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qbasictimer.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QListWidgetItem \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qlistwidget.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qlistview.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qframe.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtGui/qvalidator.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qregularexpression.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qslider.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qstyle.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qtabbar.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qrubberband.h \
 		../QtTcpClientConsumer/mainwindow.h \
 		moc_predefs.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/bin/moc
@@ -1065,6 +1086,27 @@ main.o: ../QtTcpClientConsumer/main.cpp ../QtTcpClientConsumer/mainwindow.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtNetwork/qabstractsocket.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QDebug \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QWidget \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QTimer \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qtimer.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qbasictimer.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QListWidgetItem \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qlistwidget.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qlistview.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qframe.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtGui/qvalidator.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qregularexpression.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qslider.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qstyle.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qtabbar.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qrubberband.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QApplication \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qapplication.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qcoreapplication.h \
@@ -1188,6 +1230,27 @@ mainwindow.o: ../QtTcpClientConsumer/mainwindow.cpp ../QtTcpClientConsumer/mainw
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtNetwork/qabstractsocket.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QDebug \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QWidget \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QTimer \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qtimer.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qbasictimer.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QListWidgetItem \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qlistwidget.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qlistview.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qframe.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qstyleoption.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtGui/qvalidator.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qregularexpression.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qslider.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractslider.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qstyle.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qtabbar.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qrubberband.h \
 		ui_mainwindow.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QVariant \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QApplication \
@@ -1204,13 +1267,13 @@ mainwindow.o: ../QtTcpClientConsumer/mainwindow.cpp ../QtTcpClientConsumer/mainw
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qgridlayout.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QLabel \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qlabel.h \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qframe.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QLineEdit \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qlineedit.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtGui/qtextcursor.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtGui/qtextformat.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtGui/qpen.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtGui/qtextoption.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QListWidget \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QMenuBar \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qmenubar.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qmenu.h \
@@ -1220,21 +1283,18 @@ mainwindow.o: ../QtTcpClientConsumer/mainwindow.cpp ../QtTcpClientConsumer/mainw
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qpushbutton.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractbutton.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QSlider \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qslider.h \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractslider.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QSpacerItem \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QStatusBar \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qstatusbar.h \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QTextBrowser \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qtextbrowser.h \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qtextedit.h \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtGui/qtextdocument.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QToolBar \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qtoolbar.h \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QVBoxLayout \
 		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QDateTime \
-		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qdatetime.h
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/qdatetime.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/QColorDialog \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qcolordialog.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtWidgets/qdialog.h \
+		/home/mtarginoo/Qt5.11.1/5.11.1/gcc_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../QtTcpClientConsumer/mainwindow.cpp
 
 plotter.o: ../QtTcpClientConsumer/plotter.cpp ../QtTcpClientConsumer/plotter.h \

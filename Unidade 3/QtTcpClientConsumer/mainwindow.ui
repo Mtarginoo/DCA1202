@@ -14,19 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="pushButtonGet">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>430</y>
-      <width>101</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>getData</string>
-    </property>
-   </widget>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
@@ -37,7 +24,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>

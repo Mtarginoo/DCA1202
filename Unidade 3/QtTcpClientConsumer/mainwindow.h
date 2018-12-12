@@ -6,7 +6,7 @@
 #include <QDebug>
 #include <QWidget>
 #include <QTimer>
-#include <QListWidget>
+#include <QListWidgetItem>
 
 namespace Ui {
 class MainWindow;
@@ -63,7 +63,8 @@ private:
   Ui::MainWindow *ui;
   QTcpSocket *socket;
   QTimer *clockWizard = new QTimer(this);
-  int dados[20];
+  QList <int> dados;
+  //int dados[20];
 
 };
 
